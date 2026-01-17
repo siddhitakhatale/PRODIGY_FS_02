@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h2>Admin Dashboard</h2>
+        <button id="logoutBtn">Logout</button>
+    </header>
+    <section id="container">
+        <h3>Add / Update employee</h3>
+        <form id="employeeForm">
+            <input type="hidden" id="empid">
+            <div class="grid">
+                <input type="text" id="name" placeholder="Name" name="name" required>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="text" id="phone" placeholder="Phone" name="phone" required>
+                <input type="text" id="username" placeholder="Username" name="username" required>
+                <input type="number" id="salary" placeholder="Salary" name="salary" required>
+                <input type="text" id="deparment" placeholder="Department" name="deparment" required>
+                
+            </div>
+            <textarea name="address" placeholder="Address" id="address" required></textarea>
+            <button type="submit">Save Employee</button>
+        </form>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Username</th>
+                    <th>Deparment</th>
+                    <th>salary</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </section>
+    <script src="admin.js"></script>
+</body>
+</html>
